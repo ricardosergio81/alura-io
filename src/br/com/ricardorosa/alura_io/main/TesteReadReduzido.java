@@ -1,13 +1,14 @@
-package br.com.ricardorosa.alura_oi.main;
+package br.com.ricardorosa.alura_io.main;
+
 
 import java.io.*;
 
-public class TesteRead {
+public class TesteReadReduzido {
 
     public static void main(String[] args) throws IOException {
 
-        FileInputStream fis = new FileInputStream("lorem.txt");
-        InputStreamReader isr = new InputStreamReader(fis);
+        InputStream fis = new FileInputStream("lorem.txt");
+        Reader isr = new InputStreamReader(fis);
         BufferedReader bis = new BufferedReader(isr);
 
         String line = bis.readLine();
